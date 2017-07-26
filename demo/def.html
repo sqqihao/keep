@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+    <script>var start = +new Date;</script>
+    <link href="http://udacity-crp.herokuapp.com/style.css?rtt=2" rel="stylesheet">
+</head>
+<body>
+<p>
+    执行到了<script>
+    document.write( window.performance.now() );
+    </script>
+</p>
+<script src="http://udacity-crp.herokuapp.com/time.js?rtt=1&a" defer async></script>
+    js_run_at_time:<div id="result"></div>
+    <script>document.getElementById("result").innerHTML = window.performance.now()</script>
+</body>
+</html>

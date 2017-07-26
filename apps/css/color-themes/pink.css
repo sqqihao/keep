@@ -1,0 +1,27 @@
+﻿#content-boxes h3,.page-title,#main-navigation li a:hover {
+	color: #f87ab3;
+}
+
+footer a {
+	color:#f87ab3!important;
+}
+
+.download-btn {
+	background-color:#f87ab3;
+}
+
+#logo a,#twitter-feed {
+	background:#f87ab3;
+}
+
+#newsletter, #mobile_users {
+	background:#91e89d;
+}
+
+#blockquote-rotator {
+	background: #0cb8f0;
+}
+
+.thumbnail:hover {
+	border: 1px solid #f87ab3!important;
+}

@@ -1,0 +1,56 @@
+.ui-slideout-tip{
+	min-width: 300px;
+	max-width: 1000px;
+    min-height: 40px;
+    line-height: 40px;
+    text-align: center;
+    top:0px;
+}
+
+.slideout-corner-top{
+	-moz-border-radius:  0 0 5px 5px!important;
+	-webkit-border-radius:  0 0 5px 5px!important;
+	border-radius: 0 0 5px 5px!important;	
+}
+.slideout-corner-bottom{
+	-moz-border-radius: 5px 5px 0 0 !important;
+	-webkit-border-radius: 5px 5px 0 0 !important;
+	border-radius: 5px 5px 0 0 !important;	
+}
+.slideout_content{
+	color: #fff;
+    font-size: 16px;
+	padding: 5px 10px;
+	border-radius:5px;
+}
+
+.slideout_content_info{
+	/*
+	不用蓝色的了，统一用黄色的
+	background-color: #2C89EE;
+	*/
+	background-color: #ff9600;
+}
+.slideout_content_warning{
+	background-color: #f5a623;
+}
+.slideout_content_error{
+	background-color: #FF3D3D;
+}
+.slideout_content_success{
+	background-color: #57a100;
+}
+
+.slideout_content_publish{
+	background-color: #ff9600;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius: 10px;
+}
+#slideout_message{
+	overflow:hidden;
+    text-overflow: ellipsis;
+}
+

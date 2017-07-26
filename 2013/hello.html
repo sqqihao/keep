@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>impress.js</title>
+    <link href="plug/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="tinybox.js"></script>
+</head>
+<body>
+<style>
+body{
+	font-family:"Microsoft Yahei";
+	text-shadow:2px 2px 2px #ccc;
+}
+*::selection{
+	background:#09F;
+}
+.image1{
+	/*
+	background:url(images/book.jpg) no-repeat;
+	background-size:contain;
+	*/
+	margin-top:50px;
+	border-radius:10px
+}
+.small{
+	font-size:20px;
+	text-indent:0em;
+}
+#title{
+	color: #000;
+ 	text-shadow: 1px 2px 2px #fff;  
+}
+.page1{
+	background:URL(images/sky.jpg) no-repeat;
+	padding-left:400px;
+	background-size:contain;
+	width:1000px;
+	border-radius:10px;
+	color:#000;
+	font-size:30px;
+	text-shadow: rgba(0,0,0,0.1) -1px 0, rgba(0,0,0,0.1) 0 -1px,
+             rgba(255,255,255,0.1) 1px 0, rgba(255,255,255,0.1) 0 1px,
+             rgba(0,0,0,0.1) -1px -1px, rgba(255,255,255,0.1) 1px 1px;
+}
+.bg1{
+	background:#666;
+	opacity:0.5;
+	border-radius:10px;
+	padding:20px;
+	color:#fff;
+}
+.yani{
+	border:1px dashed #9B59B6;
+	padding:12px;
+}
+.yani img{
+	-webkit-transform:rotate(-2deg);
+	transform:rotate(-2deg);
+	-webkit-filter: brightness(85%); 
+}
+.last{
+	font-size:20px;
+	line-height:20px;
+}
+.regreat img{
+	float:left;
+	margin-left:20px;
+}
+.bg2{
+	background:url(images/topofmoutain.jpg) no-repeat;
+	background-size:cover;
+	color:#eee;
+	border-radius:10px;
+}
+.road{
+	background:url(images/ston.jpg) no-repeat;
+	background-size:contain;
+	color:#eee;
+	border-radius:10px;
+	height:600px;
+	padding:20px;
+}
+.noIndent{
+	text-indent:0em;
+}
+.share{
+	font-size:70%;
+	text-shadow:4px 2px 4px #333;
+}
+/*
+body img:nth-of-type(even){
+	border-radius:20px;
+}
+*/
+body img{
+	opacity:0.8
+}
+body img:hover{
+	opacity:1;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all    0.5s;
+    -ms-transition:all     0.5s;
+    -o-transition:all      0.5s;
+    transition:all         0.5s;
+	-webkit-transform:rotate(0)
+}
+.top{
+	color:#f00;
+	opacity:1;
+    -webkit-transition:all 1s;
+    -moz-transition:all    1s;
+    -ms-transition:all     1s;
+    -o-transition:all      1s;
+    transition:all         1s;
+}
+</style>
+<div id="impress" class="impress-not-supported">
+
+	<div id="title" class="step" data-x="0" data-y="0" data-scale="4" >
+        <span class="try">有关于学习和明年的计划</span>
+     	<img src="images/book.jpg"  href="images/book.jpg" rel="lightbox"  class="image1"/>
+     	<a src="" href="images/book.jpg" class="image1"></a>
+    </div>
+    
+     <div class="step page1" data-x="-2500" data-y="2000" data-rotate="90">
+     因为<span class="have">2013</span>是毕业的第<a href="">三年</a>，而且听说毕业<a href="">五年</a>会决定了你的一辈子，所以在今年和去年年底都比较努力,fighting   <a href="">\+_+/</a>
+     </div>
+
+     <div  class="step noIndent" data-x="-1300" data-y="1300" data-rotate="720">
+         <q>0. <b>我遗憾的事情</b></q><br />
+         <p class="small yani">
+            没能去参加<b>2013</b>年<a href="">雅尼</a>的北京音乐会，（=_=）!<br>
+            因为<b>2012</b>年<a href="">目标</a>完全没有达成，所以说2013年对自己的处罚是要天天凌晨<i>3</i>点睡觉，很显然，我没做到(年年的目标最后都要吹掉一半)<br>
+            陪伴我两年的AKG420(爱科技耳机)居然挂彩了,陪伴我一年的CX200(入耳森海塞尔)因为手抖,也跪了,然后入了CKM500(入耳铁三角,高音神器,值得欣慰)
+            <img src="images/bird.jpg" height="400"/>
+         </p>
+     </div>
+     
+     <div class="step" data-x="0" data-y="1300" data-rotate="720">
+         <q>1. <span class="scaling">我追求和我热爱的</span></q><br />
+         <p class="small">
+            没有跟以前一样疯狂的打球了，就在今年下半年我彻底爱上了一个叫<a href="">Poppin</a>(毕竟冬天太冷，而且附近的大学球场很远,今年过年回家恶补一下)，<br> 在今年终于是一名合格的前端开发了，为了成为<b>大神</b>不懈而努力中。
+         </p>
+         <img src="images/dance.jpg" width="500"/>
+         
+     </div>
+     
+     <div class="step" data-x="1300" data-y="1300" data-rotate="720">
+         <q>2. 我印象比较深刻的书</q><br />
+         <p class="small"><a href="">《影响力》</a>《执行力》
+         《JAVASCRIPT高级程序设计》《JAVASCRIPT权威指南》《JAVASCRIPT精粹》《JAVASCRIPT设计模式》
+         <a href="">《礼物》</a><a href="">《九型人格》</a>《FBI读人术》<br>
+            <img src="images/图片1.jpg" />
+            <img src="images/IMG_20131230_230043.jpg" width="200"/>
+            <img src="images/image3.jpg" width="200"/>           
+        </p> 
+     </div>
+     
+     
+     <div class="step" data-x="2600" data-y="2600" data-rotate="720">
+         <q>3. 我自豪的 </q><br />
+         <p class="small bg1">
+         	因为以前平常很喜欢闲逛，去玩，现在没有以前那么疯狂了，平常看看<a href="">书</a>，<a href="">写写代码</a>，练习<a href="">pop</a>，打打球时间过得很快的.<br>
+         	很感谢<b>很重要的朋友们</b>在有时候给你一些指点，这一直是我一笔很重要的财富。<br>
+         	也许成功很简单，做你喜欢的事情，<a href="">坚持</a>下去就可以了，1年，2年，3年，。。5年。。<br>
+         	我会继续努力<br>       
+        </p> 
+     </div>
+     
+     <div class="step bg2 noIndent" data-x="3500" data-y="-850" data-rotate="270" data-scale="3">
+         <q>4. 我想对自己说的 </q><br />
+         <p class="small">
+         	不要说脏话，这个很重要<br>
+			不要因为走的太远，忘了我们为什么出发，<b>柴静。</b><br>
+            intheworld无论怎样，总有一些人说你做到不到，不应该这样和那样（往往他们也没有恶意），但是如果你听了他们的话，你就不是你自己，你会变成和他们一样，做自己很难，要<a href="">坚持</a>就好<br>
+            人生就是一场无法抗拒的前进<br>
+            多去承担责任，责任越大，就越优秀了，不要害怕，失败是正常的
+        </p> 
+     </div>
+     
+     <div class="step"  data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-10" data-rotate-y="10" data-scale="2">
+         <b>5. 要加油的</b><br />
+         <p class="small">
+         	在现实生活中，<strong>你和谁</strong>在一起的确很重要，甚至能改变你的成长<a href="">轨迹</a>，决定你的人生成败。和什么样的人在一起，就会有什么样的人生。和<a href="">勤奋</a>的人在一起，你不会懒惰；和<a href="">积极</a>的人在一 起，你不会消沉；与<a href="">智者</a>同行，你会不同凡响；与高人为伍，你能登上<i class="top">巅峰</i><br>(话说年前的运气不错，公司抽奖居然抽到一台三星的<strong>板</strong>，前些天跟常诚老师混了xpower的年度表演，居然又中奖了，二楼:无图无真相，LZ回复二楼：木有),这是要<a href="###">逆袭</a>的节奏<br>
+			<img src="images/image1.jpg" style="float:right" width="200px"/>
+        </p> 
+     </div>
+     
+     
+     <div class="step noIndent" data-x="3000" data-y="1500">
+         <q>6. 明年的计划 </q><br />
+         <p class="small">
+         	把天通苑的钱补齐了，中间用一个月时间背单词，找个培训的学习英语了，毕竟都听了一年多的英语听力了.(感觉效果很不行)<br>
+            青春很短暂，一路只有自己可以相信，不要停止，不要轻易相信别人的抱怨，不要相信别人的好话和坏话<br>
+            希望象<a href="">他们</a>一样，可以很负责，<a href="">他们</a>一样可以拥有丰富经验，而且样样精通（现在我精一样就好了，不要想太多了），如<a href="">他们</a>一样，可以很用心，(他们就是别人家的孩子,你懂的)<br>
+            少抽些吧，最近肚子痛到不行了.
+        </p> 
+     </div>
+     
+     
+     <div class="step" data-x="6000" data-y="3000" data-scale="5">
+         <q>还是有值得欣慰的东东</q><br />
+         <p class="small">
+            青春就是可以通宵看小说，通宵看动漫,通宵打球，通宵玩游戏,通宵睡觉,通宵写代码,通宵练习pop,通宵做你想做的事情<br>
+         	每一个第一次都值得留恋
+            <img src="images/cave.jpg" height="400px">
+        </p> 
+     </div>
+     
+     <div class="step" data-x="6000" data-y="0">
+         <q>微博上流行很久的的人生五大遗憾</q><br />
+         <p class="small regreat">
+         	<img src="images/图片2_0.png" height="400"/>
+            <img src="images/图片2_1.png"  height="400"/>
+            <img src="images/图片2_3.png"  height="400"/>
+        </p> 
+     </div>
+     
+     <div class="step" data-x="0000" data-y="3000" data-rotate="-1" data-scale="2">
+		 <q></q>
+         <p class="small road">
+            不要太忙于低头赶路，以致错过了太多美好的风景<br>
+        </p> 
+     </div>
+     
+     <div class="step" data-x="-2000" data-y="3000" data-scale="2">
+         <q>2013年我认为学到最宝贵的</q><br />
+         <p class="small noIndent">
+            <b>责任</b>：你能承担多大的责任，你就会有多大的成就。<br>
+            <b>自我</b>：无论谁，都无法改变你的心情，你只要固执的坚持你认为正确的事情和心态就好。<br>
+            <b>学习</b>：没有为什么<br>
+        </p> 
+     </div>　　
+     
+     <div class="step" data-x="-3500" data-y="3000" >
+         <q>分享</q><br />
+         <p class="share">
+			<img src="images/image4.jpg" style="float:right;height:400px"/>
+            1 ： 要学习<br>
+            2 ： 要分享<br>
+            3 ： 要奋斗<br>
+            4 ： 要自我<br>
+            5 ： 要负责<br>
+            6 ： 要目标<br>
+            </p>
+            <p class="small">
+            再长的路，一步步也能走完；再短的路，不迈开双脚也无法到达。
+            </p>
+     </div>
+     
+     <div class="step" data-x="-5000" data-y="3000" data-rotate="6">
+         <q>在最后</q><br />
+         <p>
+             <span class="last">
+             	我们为了捕捉快乐而忘我的奔跑。一路上，患得患失。<br>以致最终，我们停下了奔跑的脚步，融化在这个沸腾的世界
+             </span>
+         	 <a  href="http://www.56.com/u21/v_MTAwMjA0OTk0.html/1030_humormaster.html">Video_Link</a>
+		     <img style="float:right;height:100px;" src="images/image2.jpg" />
+        </p> 
+     </div>
+     
+     <div class="step" data-x="-7000" data-y="3000" data-rotate="720">
+     	<img src="images/canBack.jpg" />
+     </div>
+</div><script src="plug/main.js"></script>
+<script>
+impress();
++function(){
+	var aImg = Array.prototype.slice.call(document.querySelectorAll('img'));
+	aImg.forEach(function(e,i){
+		e.onclick = function(evt){
+			//TINY.box.show(e.outerHTML,0,0,0,0,5)
+			//TINY.box.show("<img src="+e.src+" height=\"600\"/>",0,0,0,0,5)
+			//TINY.box.show( {image:e.src ,animate:true,boxid:'frameless',animate:true,openjs:function(){openJS()}} )
+			  TINY.box.show({image:e.src,animate:true,boxid:'frameless'})
+			  //evt.stopPropagation();
+			  new Drag(document.querySelector(".tbox"),{range:false})
+		}
+	});
+}()
+</script>
+</body>
+</html>

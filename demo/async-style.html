@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+</head>
+<body>
+<p style="color:#f00">
+    红色的P标签：
+</p>
+<script>
+    var p = document.getElementsByTagName("p")[0];
+    document.writeln( window.getComputedStyle(p,false)["color"] );
+</script>
+<script>
+    var link = document.createElement('link');
+    link.href = "p-green.css";
+    link.rel = "stylesheet";
+    document.head.appendChild(link);
+    var script = document.createElement('script');
+    script.src = "p-green.js";
+    document.head.appendChild(script);
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.write("从远程服务器执行JS; performance is"+ window.performance.now());

@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/respond.min.js"></script>
+</head>
+<body>
+<h5>
+    超小屏幕 手机 (<768px)	  
+    .col-xs-
+</h5>
+
+<h5>
+    小屏幕 平板 (≥768px)	 
+    .col-sm-
+</h5>
+
+<h5>
+    中等屏幕 桌面显示器 (≥992px)	
+    .col-md-
+</h5>
+
+<h5>
+    大屏幕 大桌面显示器 (≥1200px)
+    .col-lg-
+</h5>
+
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">.col-xs-12 col-sm-12</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-10 col-md-2">.col-xs-6</div>
+      <div class="col-xs-6 col-sm-2 col-md-10">.col-xs-6</div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <!-- Optional: clear the XS cols if their content doesn't match in height -->
+      <div class="clearfix visible-xs-block"></div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+    </div>
+    
+    <h5>responsive column resets</h5>
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+    
+      <!-- Add the extra clearfix for only the required viewport -->
+      <div class="clearfix visible-xs-block"></div>
+    
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-9">
+        Level 1: .col-sm-9
+        <div class="row">
+          <div class="col-xs-8 col-sm-6">
+            Level 2: .col-xs-8 .col-sm-6
+          </div>
+          <div class="col-xs-4 col-sm-6">
+            Level 2: .col-xs-4 .col-sm-6
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+    	<div class="col-sm-5">
+        	<div class="row">                
+                <div class="col-sm-5">sm-5</div>
+                <div class="col-sm-5">sm-5</div>
+            </div>
+        </div>
+    	<div class="col-sm-5">col-sm-5</div>
+    </div>
+</div>
+</body>
+</html>
